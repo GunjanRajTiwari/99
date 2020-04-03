@@ -1,4 +1,4 @@
-// Never Win 99
+// Never Win 100
 var sum = document.getElementById('sum')
 var you = document.getElementById("your-num")
 var bot = document.getElementById("bot-num")
@@ -9,14 +9,14 @@ function clicked(n) {
     if(yourTurn===true){
         let sumNum = Number(sum.innerHTML)
         let yourNum = n
-        if(sumNum+yourNum<99){
+        if(sumNum+yourNum<=99){
             you.innerHTML = yourNum
             sum.innerHTML = sumNum + yourNum
             yourTurn = false
             botTurn = true
             botLogic(yourNum);
         }
-        if(sumNum==99){
+        if(sumNum==100){
             result(yourTurn,botTurn)
         }
     }
@@ -32,7 +32,7 @@ async function botLogic(yourNum) {
     sum.innerHTML =Number(sum.innerHTML) + 11-yourNum
     yourTurn = true
     botTurn = false
-    if(Number(sum.innerHTML)==99){
+    if(Number(sum.innerHTML)==100){
         result(yourTurn,botTurn)
     }
 }
