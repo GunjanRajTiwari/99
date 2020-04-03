@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Never Win 99</title>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="h1">Never Win 99</h1>
+        <h2 class="h2">The game you can never win.</h2>
+        <h3 class="h3">You have to choose a number random number until the sum reaches 99. The one who makes the sum 99 wins.</h3>
+        <h3 class="msg">Let's play!</h3>
+        <div class="container1">
+            <div class="gameflex">
+                <div class="your-div">
+                    YOUR NUMBER     
+                    <span id="your-num" class="your-num">?</span>
+                </div>
+                <div class="sum-div">  SUM     
+                    <span class="sum" id="sum"></span>
+                </div>
+                <div class="bot-div">
+                    BOT NUMBER     
+                    <span class="bot-num" id="bot-num">?</span>
+                </div>    
+            </div>
+            <div class="numbers">
+                <button class="btn btn-secondary" id="1" onclick="clicked(1)">1</button>
+                <button class="btn btn-secondary" id="2" onclick="clicked(2)">2</button>
+                <button class="btn btn-secondary" id="3" onclick="clicked(3)">3</button>
+                <button class="btn btn-secondary" id="4" onclick="clicked(4)">4</button>
+                <button class="btn btn-secondary" id="5" onclick="clicked(5)">5</button>
+                <button class="btn btn-secondary" id="6" onclick="clicked(6)">6</button>
+                <button class="btn btn-secondary" id="7" onclick="clicked(7)">7</button>
+                <button class="btn btn-secondary" id="8" onclick="clicked(8)">8</button>
+                <button class="btn btn-secondary" id="9" onclick="clicked(9)">9</button>
+                <button class="btn btn-secondary" id="10" onclick="clicked(10)">10</button>
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>

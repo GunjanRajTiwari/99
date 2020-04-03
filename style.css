@@ -1,0 +1,35 @@
+.main{
+    width: 90%;
+    text-align: center;
+    margin: 2% auto;
+}
+
+.container1{
+    border: 1px solid black;
+}
+
+.gameflex, .numbers{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.your-div, .sum-div, .bot-div{
+    flex: 1;
+    margin: auto;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+.your-num, .bot-num, .sum {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18vw;
+    margin: 2% auto;
+}
+
+.numbers{
+    margin: 1% auto;
+}
+
